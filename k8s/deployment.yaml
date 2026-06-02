@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jira-ai-bot
+  namespace: jira-bot
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: jira-ai-bot
+
+  template:
+    metadata:
+      labels:
+        app: jira-ai-bot
+
+    spec:
+      imagePullSecrets:
+      - name: dockerhub-secret
+
+      containers:
+      - name: bot
+        image: huektyc/jira-ai-bot:latest
+
+        envFrom:
+        - secretRef:
+            name: jira-bot-secret
