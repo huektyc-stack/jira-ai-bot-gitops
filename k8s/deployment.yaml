@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: jira-ai-bot
   namespace: jira-bot
@@ -18,16 +19,20 @@ spec:
 
     spec:
       imagePullSecrets:
-      - name: dockerhub-secret
+        - name: dockerhub-secret
 
       containers:
-      - name: bot
-<<<<<<< HEAD
-        image: huektyc/jira-ai-bot:4885c52
-=======
-        image: huektyc/jira-ai-bot:4885c52
->>>>>>> 1fb5ca9 (correction of the previous one)
 
-        envFrom:
-        - secretRef:
-            name: jira-bot-secret
+      - name: bot
+
+        image: huektyc/jira-ai-bot:4885c52
+
+        image: huektyc/jira-ai-bot:4885c52
+
+
+        - name: bot
+          image: huektyc/jira-ai-bot:d2c6c38
+
+          envFrom:
+            - secretRef:
+                name: jira-bot-secret
