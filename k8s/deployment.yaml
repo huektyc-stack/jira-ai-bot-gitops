@@ -23,7 +23,7 @@ spec:
 
       containers:
         - name: bot
-          image: huektyc/jira-ai-bot:d2c6c38
+          image: huektyc/jira-ai-bot:5ed6710
 
           envFrom:
             - secretRef:
