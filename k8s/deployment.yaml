@@ -22,7 +22,11 @@ spec:
 
       containers:
       - name: bot
+<<<<<<< HEAD
         image: huektyc/jira-ai-bot:d2c6c38
+=======
+        image: huektyc/jira-ai-bot:init
+>>>>>>> 1fb5ca9 (correction of the previous one)
 
         envFrom:
         - secretRef:
