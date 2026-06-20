@@ -23,9 +23,9 @@ spec:
       containers:
       - name: bot
 <<<<<<< HEAD
-        image: huektyc/jira-ai-bot:d2c6c38
+        image: huektyc/jira-ai-bot:4885c52
 =======
-        image: huektyc/jira-ai-bot:init
+        image: huektyc/jira-ai-bot:4885c52
 >>>>>>> 1fb5ca9 (correction of the previous one)
 
         envFrom:
