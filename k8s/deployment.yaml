@@ -22,14 +22,6 @@ spec:
         - name: dockerhub-secret
 
       containers:
-
-      - name: bot
-
-        image: huektyc/jira-ai-bot:4885c52
-
-        image: huektyc/jira-ai-bot:4885c52
-
-
         - name: bot
           image: huektyc/jira-ai-bot:d2c6c38
 
